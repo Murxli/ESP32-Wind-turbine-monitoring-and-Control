@@ -2,9 +2,23 @@
 
 #define THINGNAME "final"
 
-const char WIFI_SSID[] = "OnePlus";
-const char WIFI_PASSWORD[] = "Abishek89";
+#define AWS_IOT_PUBLISH_TOPIC   "esp32/pub"
+#define AWS_IOT_SUBSCRIBE_TOPIC "esp32/sub"
+
+#define BLYNK_TEMPLATE_ID   "TMPL3Sw8lPL5l"
+#define BLYNK_TEMPLATE_NAME "Quickstart Template"
+#define BLYNK_AUTH_TOKEN    "Vm75aKivgHih8msHB2VHgiSb7LHzBR20"
+
+#define TOKEN BBUS-9zUpKwe7T7wTUN0hpsO2mLDmmPmhBh
+
+
+
+const char WIFI_SSID[] = "123";
+const char WIFI_PASSWORD[] = "11223344";
 const char AWS_IOT_ENDPOINT[] = "a3hju2tg3xo1gn-ats.iot.ap-south-1.amazonaws.com";
+const char MQQT_SERVER[] = "127.0.0.1";
+
+// char mqttBroker[]  = "industrial.api.ubidots.com";
 
 // Amazon Root CA 1
 static const char AWS_CERT_CA[] PROGMEM = R"EOF(
